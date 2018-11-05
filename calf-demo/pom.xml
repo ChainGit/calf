@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.chain</groupId>
+    <groupId>top.leechain</groupId>
     <artifactId>calf-demo</artifactId>
 
     <name>${project.artifactId}</name>
@@ -30,17 +30,21 @@
         <plugin-source.version>3.0.1</plugin-source.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
+    <dependencies>
 
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
+        <dependency>
+            <groupId>com.chain.calf</groupId>
+            <artifactId>calf-core</artifactId>
+            <version>${chain-calf.version}</version>
+        </dependency>
 
-        </dependencies>
-    </dependencyManagement>
+        <dependency>
+            <groupId>com.chain.calf</groupId>
+            <artifactId>calf-test</artifactId>
+            <version>${chain-calf.version}</version>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <plugins>

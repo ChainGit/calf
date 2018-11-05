@@ -18,6 +18,8 @@
         <module>calf-core</module>
         <module>calf-utils</module>
         <module>calf-log</module>
+        <module>colf-test</module>
+        <module>calf-exception</module>
     </modules>
 
     <properties>
@@ -44,6 +46,43 @@
         <commons-logging.version>1.2</commons-logging.version>
         <log4j.version>2.11.1</log4j.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf-test</artifactId>
+                <version>${chain-calf.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf-core</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf-utils</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf-log</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf-exception</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

@@ -31,6 +31,16 @@
             <version>${log4j.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.chain.calf</groupId>
+            <artifactId>calf-exception</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chain.calf</groupId>
+            <artifactId>calf-test</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

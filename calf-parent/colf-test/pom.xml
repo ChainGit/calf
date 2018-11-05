@@ -11,30 +11,29 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>calf-core</artifactId>
+    <artifactId>calf-test</artifactId>
 
     <packaging>jar</packaging>
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
+            <!--<scope>test</scope>-->
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
-            <groupId>com.chain.calf</groupId>
-            <artifactId>calf-utils</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.chain.calf</groupId>
-            <artifactId>calf-test</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <!--只在测试阶段使用，不需要放入到运行环境-->
+            <!--<scope>test</scope>-->
         </dependency>
 
     </dependencies>
-
 
 </project>
