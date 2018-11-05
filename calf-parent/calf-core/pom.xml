@@ -10,7 +10,25 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
+
     <artifactId>calf-core</artifactId>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chain</groupId>
+            <artifactId>calf-utils</artifactId>
+            <version>${chain-calf.version}</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
