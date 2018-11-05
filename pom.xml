@@ -5,18 +5,18 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chain</groupId>
-    <artifactId>calf</artifactId>
+    <artifactId>calf-parent</artifactId>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
-    <version>${calf.version}</version>
+    <version>${chain-calf.version}</version>
 
     <modules>
         <module>calf-core</module>
     </modules>
 
     <properties>
-        <calf.version>0.0.1-SNAPSHOT</calf.version>
+        <chain-calf.version>0.0.1-SNAPSHOT</chain-calf.version>
 
         <!--http://maven.apache.org/plugins/-->
         <plugin-clean.version>3.1.0</plugin-clean.version>
@@ -34,11 +34,18 @@
         <junit.version>4.12</junit.version>
         <fastjson.version>1.2.51</fastjson.version>
 
-        <spring.version>4.3.20.RELEASE</spring.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/junit/junit -->
             <dependency>
                 <groupId>junit</groupId>
