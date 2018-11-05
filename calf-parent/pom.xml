@@ -9,7 +9,7 @@
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
-    <version>${chain-calf.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <modules>
         <module>calf-core</module>
