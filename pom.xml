@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.chain</groupId>
+    <artifactId>calf</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+
+    <modules>
+
+    </modules>
+
+    <properties>
+        <!--http://maven.apache.org/plugins/-->
+        <plugin-clean.version>3.1.0</plugin-clean.version>
+        <plugin-compiler.version>3.8.0</plugin-compiler.version>
+        <plugin-deploy.version>3.0.0-M1</plugin-deploy.version>
+        <plugin-failsafe.version>2.22.1</plugin-failsafe.version>
+        <plugin-install.version>3.0.0-M1</plugin-install.version>
+        <plugin-resources.version>3.1.0</plugin-resources.version>
+        <plugin-site.version>3.7.1</plugin-site.version>
+        <plugin-surefire.version>2.22.1</plugin-surefire.version>
+        <plugin-verifier.version>1.1</plugin-verifier.version>
+        <plugin-source.version>3.0.1</plugin-source.version>
+
+        <lombok.version>1.18.4</lombok.version>
+        <junit.version>4.12</junit.version>
+        <fastjson.version>1.2.51</fastjson.version>
+
+        <spring.version>4.3.20.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!--Compiles Java sources.-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${plugin-compiler.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!--Build a source-JAR from the current project.-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${plugin-source.version}</version>
+            </plugin>
+
+            <!--Deploy the built artifact to the remote repository.-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${plugin-deploy.version}</version>
+            </plugin>
+
+            <!--Run the JUnit unit tests in an isolated classloader.-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${plugin-surefire.version}</version>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
