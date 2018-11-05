@@ -20,6 +20,7 @@
         <module>calf-log</module>
         <module>colf-test</module>
         <module>calf-exception</module>
+        <module>calf-spring-core</module>
     </modules>
 
     <properties>
@@ -65,6 +66,12 @@
 
             <dependency>
                 <groupId>com.chain.calf</groupId>
+                <artifactId>calf-exception</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
                 <artifactId>calf-utils</artifactId>
                 <version>${chain-calf.version}</version>
             </dependency>
@@ -77,7 +84,7 @@
 
             <dependency>
                 <groupId>com.chain.calf</groupId>
-                <artifactId>calf-exception</artifactId>
+                <artifactId>calf-spring-core</artifactId>
                 <version>${chain-calf.version}</version>
             </dependency>
 

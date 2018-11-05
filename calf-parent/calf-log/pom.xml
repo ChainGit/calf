@@ -33,7 +33,8 @@
 
         <dependency>
             <groupId>com.chain.calf</groupId>
-            <artifactId>calf-exception</artifactId>
+            <artifactId>calf-spring-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
