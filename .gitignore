@@ -1,8 +1,26 @@
+*/.classpath
+*/.project
+*/.gitignore.bak
+*/*.iml
+
 .classpath
 .project
-.settings/
 .gitignore.bak
-.idea/
+
 *.iml
-*/target/*
-*/bin/*
+
+## IDE
+
+*/.settings/
+*/.idea/
+
+.settings/
+.idea/
+
+## OUTPUT
+
+*/target/
+*/bin/
+
+target/
+bin/
