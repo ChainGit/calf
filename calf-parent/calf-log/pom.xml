@@ -11,26 +11,26 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>calf-core</artifactId>
+    <artifactId>calf-log</artifactId>
 
     <packaging>jar</packaging>
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>${commons-logging.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
-            <groupId>com.chain.calf</groupId>
-            <artifactId>calf-utils</artifactId>
-            <version>${chain-calf.version}</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
 
     </dependencies>
-
 
 </project>

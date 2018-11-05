@@ -5,20 +5,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>calf-parent</name>
+    <groupId>com.chain</groupId>
+    <artifactId>calf-demo</artifactId>
 
-    <groupId>com.chain.calf</groupId>
-    <artifactId>calf</artifactId>
+    <name>${project.artifactId}</name>
+
+    <packaging>war</packaging>
 
     <version>0.0.1-SNAPSHOT</version>
-
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>calf-core</module>
-        <module>calf-utils</module>
-        <module>calf-log</module>
-    </modules>
 
     <properties>
         <chain-calf.version>0.0.1-SNAPSHOT</chain-calf.version>
@@ -34,16 +28,19 @@
         <plugin-surefire.version>2.22.1</plugin-surefire.version>
         <plugin-verifier.version>1.1</plugin-verifier.version>
         <plugin-source.version>3.0.1</plugin-source.version>
-
-        <spring.version>4.3.20.RELEASE</spring.version>
-
-        <lombok.version>1.18.4</lombok.version>
-        <junit.version>4.12</junit.version>
-        <fastjson.version>1.2.51</fastjson.version>
-
-        <commons-logging.version>1.2</commons-logging.version>
-        <log4j.version>2.11.1</log4j.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.chain.calf</groupId>
+                <artifactId>calf</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
