@@ -7,7 +7,7 @@
 
     <name>calf-parent</name>
 
-    <groupId>com.chain.calf</groupId>
+    <groupId>top.leechain.calf</groupId>
     <artifactId>calf</artifactId>
 
     <version>0.0.1-SNAPSHOT</version>
@@ -15,12 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>calf-core</module>
-        <module>calf-utils</module>
-        <module>calf-log</module>
-        <module>colf-test</module>
-        <module>calf-exception</module>
-        <module>calf-spring-core</module>
+
     </modules>
 
     <properties>
@@ -50,43 +45,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-test</artifactId>
-                <version>${chain-calf.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-core</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-exception</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-utils</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-log</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.chain.calf</groupId>
-                <artifactId>calf-spring-core</artifactId>
-                <version>${chain-calf.version}</version>
-            </dependency>
 
         </dependencies>
     </dependencyManagement>
