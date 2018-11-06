@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>top.leechain</groupId>
+    <groupId>com.chain.demo</groupId>
     <artifactId>calf-demo</artifactId>
 
     <name>${project.artifactId}</name>
@@ -31,18 +31,6 @@
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.chain.calf</groupId>
-            <artifactId>calf-core</artifactId>
-            <version>${chain-calf.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.chain.calf</groupId>
-            <artifactId>calf-test</artifactId>
-            <version>${chain-calf.version}</version>
-        </dependency>
 
     </dependencies>
 
