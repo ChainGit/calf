@@ -15,7 +15,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>calf-test</module>
 
+        <module>calf-base</module>
+        <module>calf-core</module>
+        <module>calf-utils</module>
     </modules>
 
     <properties>
@@ -45,6 +49,31 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>top.leechain.calf</groupId>
+                <artifactId>calf-test</artifactId>
+                <version>${chain-calf.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>top.leechain.calf</groupId>
+                <artifactId>calf-base</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>top.leechain.calf</groupId>
+                <artifactId>calf-utils</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>top.leechain.calf</groupId>
+                <artifactId>calf-core</artifactId>
+                <version>${chain-calf.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
