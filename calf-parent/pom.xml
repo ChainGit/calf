@@ -42,6 +42,7 @@
         <lombok.version>1.18.4</lombok.version>
         <junit.version>4.12</junit.version>
         <fastjson.version>1.2.51</fastjson.version>
+        <aspectjweaver.version>1.9.2</aspectjweaver.version>
 
         <commons-logging.version>1.2</commons-logging.version>
         <log4j.version>2.11.1</log4j.version>
